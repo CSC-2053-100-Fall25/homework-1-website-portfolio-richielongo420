@@ -1,68 +1,81 @@
 <!DOCTYPE html>
-<html>
- <head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Richie Longo, Senior</title>
 
-    <div class="bg-info text-white p-5">
-    My Villanova Webpage
-  </div>
-  
-<nav class="navbar navbar-expand-xl navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">My Villanova Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarBasic">
-      <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="sports.html">Sports</a>
-        </li>
-       
-      </ul>
-    
-    </div>
-  </div>
-</nav>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="C:\CSC2053-Webpage\Resources\css\style.css">
 </head>
- 	<link
- href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
- rel="stylesheet"
- integrity="sha384-
-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
- crossorigin="anonymous"
- />
- <title>Richie Longo, Senior</title>
- <link rel="stylesheet" href="../resources/css/style.css">
- </head>
- <body>
-
- <h1>Richie Longo, Senior at Villanova</h1>
-
- <main class="container mt-4">
- <p>My name is Richie Longo, and I am a senior mechanical engineering student at Villanova University. I enjoy watching and playing sports, as well as reading and spending time with family and friends. This is my Villanova homepage.</p>
- </body>
- <img
- src="C:\CSC2053-Webpage\Resources\img\headshot.jpeg"
- alt="An image of me"
- class="img-fluid rounded border border-3 border-dark"width="220px">
-<br/>
-<a href = "https://www1.villanova.edu/university/liberal-arts-sciences/programs/computing-sciences.html" > Link to Villanova Computing Sciences Department </a>
-
 <body class="bg-info text-white">
 
-  <div class="container py-5">
+  <!-- Header Banner -->
+  <div class="bg-info text-white p-5">
+    <h1 class="mb-0">My Villanova Webpage</h1>
   </div>
 
-</body>
-<script
- src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
- integrity="sha384-
-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
- crossorigin="anonymous"
- ></script>
+  <!-- Navbar -->
+  <div id="navbar-container"></div>
 
- <body>
+
+  <!-- Main Content -->
+  <main class="container mt-4">
+    <h2>Richie Longo, Senior at Villanova</h2>
+    <p>
+      My name is Richie Longo, and I am a senior mechanical engineering student at Villanova University. 
+      I enjoy watching and playing sports, as well as reading and spending time with family and friends. 
+      This is my Villanova homepage.
+    </p>
+
+    <!-- Photo container -->
+    <div id="photo-container" class="text-center my-3">
+      <img
+        src="C:\CSC2053-Webpage\Resources\img\headshot.jpeg"
+        alt="An image of me"
+        class="img-fluid rounded border border-3 border-dark"
+        width="220">
+    </div>
+
+    <!-- Toggle Button -->
+    <div class="text-center">
+      <button id="togglePhotoBtn" class="btn btn-primary">Hide Photo</button>
+    </div>
+
+      <!-- Favorite Artists Section -->
+    <section>
+    <h3>My Favorite Artists</h3>
+      <p>Click the button below to add musicians to the page!</p>
+      <button id="add-artist">Add artists</button>
+      <div id="artists-container"></div>
+    </section>
+
+    <br/>
+    <a href="https://www1.villanova.edu/university/liberal-arts-sciences/programs/computing-sciences.html" 
+       class="text-white fw-bold">
+      Link to Villanova Computing Sciences Department
+    </a>
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous">
+  </script>
+
+  <!-- Custom JavaScript -->
+  <script src="../resources/js/script.js"></script>
+  <script src="../resources/js/navbar.js"></script>
+<script>
+ loadNavbar(); // Call the function to load the navbar
+</script> 
+
+</body>
 </html>
