@@ -17,8 +17,8 @@ function loadNavbar() {
 
  // Create nav items
  const navItems = [
- { text: 'Home', href: 'index.html' },
- { text: 'Sports', href: 'sports.html' }
+ { text: 'Home', href: '../resources/views/index.html' },
+ { text: 'Sports', href: '../resources/views/sports.html' }
  ];
  navItems.forEach(item => {
  const li = document.createElement('li');
